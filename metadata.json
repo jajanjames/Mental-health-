@@ -1,0 +1,6 @@
+{
+  "name": "Kappiness — Mental Health Café & Online Consultation",
+  "description": "Where Kappi meets Happiness. Share a warm coffee chat with Tara appers or book online counseling in Malayalam, English, and Tamil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

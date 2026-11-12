@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #FDFBF7;
+    --surface: #FFFFFF;
+    --foreground: #181916;
+    --muted: #5E6057;
+    --border-hairline: #E6E2D6;
+    --primary: #446E35;
+    --primary-amber: #E96326;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'Noto Sans Malayalam', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Poppins', 'Noto Sans Malayalam', sans-serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes steamRise {
+  0% {
+    transform: translateY(8px) scaleX(0.92);
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-22px) scaleX(1.12);
+    opacity: 0;
+  }
+}
+
+@keyframes sunPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+@keyframes cloudDrift {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(14px) translateY(-4px);
+  }
+}
+
+@keyframes leafSway {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(2.2deg) scale(1.02);
+  }
+}
+
+.animate-steam-1 {
+  animation: steamRise 3.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.animate-steam-2 {
+  animation: steamRise 3.2s cubic-bezier(0.16, 1, 0.3, 1) 1.1s infinite;
+}
+
+.animate-steam-3 {
+  animation: steamRise 3.2s cubic-bezier(0.16, 1, 0.3, 1) 2.1s infinite;
+}
+
+.animate-sun-glow {
+  animation: sunPulse 5.5s ease-in-out infinite;
+}
+
+.animate-cloud-slow {
+  animation: cloudDrift 9s ease-in-out infinite;
+}
+
+.animate-leaf-sway {
+  animation: leafSway 6.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-steam-1,
+  .animate-steam-2,
+  .animate-steam-3,
+  .animate-sun-glow,
+  .animate-cloud-slow,
+  .animate-leaf-sway {
+    animation: none !important;
+  }
+}
