@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // Site is deployed under https://kappiness.palqar.com/user/
+    base: '/user/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

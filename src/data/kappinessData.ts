@@ -137,11 +137,11 @@ export interface RsvpRecord {
 }
 
 export const GENERATED_ILLUSTRATIONS = {
-  heroCafe: '/assets/aistudio/image_0bb89a02.png',
+  heroCafe: `${import.meta.env.BASE_URL}assets/aistudio/image_0bb89a02.png`,
   mudhouseGarden: mudhouseSanctuaryImg,
   onlineSession: onlineCoffeeNookImg,
   communityCircle: mudhouseSanctuaryImg,
-  scenicFooter: '/assets/aistudio/image_623c1e70.png',
+  scenicFooter: `${import.meta.env.BASE_URL}assets/aistudio/image_623c1e70.png`,
 };
 
 export const THERAPY_CATEGORIES: TherapyCategoryOption[] = [
