@@ -206,7 +206,7 @@ export default function App() {
         ref={heroRef}
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={handleHeroMouseLeave}
-        className="relative w-full min-h-[580px] sm:min-h-[650px] lg:min-h-[750px] xl:min-h-[820px] flex flex-col justify-between overflow-hidden bg-[#FAF2E5]"
+        className="relative w-full h-screen h-[100dvh] min-h-[580px] flex flex-col justify-between overflow-hidden bg-[#FAF2E5]"
       >
         {/* OVERSCANNED PARALLAX ARTWORK LAYER FROM TOP:0 (NEVER SPLITS BELOW HEADLINE) */}
         <div
